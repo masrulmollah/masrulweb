@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page Website with Tabs</title>
+    <style>
+        .tabcontent {
+            display: none;
+        }
+
+        .tabcontent.active {
+            display: block;
+        }
+
+        .tab {
+            display: inline-block;
+            margin: 0 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+        }
+
+        .tab.active {
+            background-color: #ccc;
+        }
+
+        .content-box {
+            background-color: #2ecc71;
+            padding: 0px;
+            margin-bottom: 0px;
+            width: 280px;
+	    height: 40px;
+        }
+
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .video-container {
+            width: 280px;
+            margin-bottom: 0px;
+        }
+
+        iframe {
+            width: 280px;
+            height: 160px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab" onclick="showPage('page1')">Machine Learning</div>
+        <div class="tab" onclick="showPage('page2')">Deep Learning</div>
+        <div class="tab" onclick="showPage('page3')">Data Science</div>
+        <div class="tab" onclick="showPage('page4')">Python</div>
+    </div>
+
+    <div id="page1" class="tabcontent active">
+        <h1>Welcome to Machine Learning</h1>
+        
+        <div class="videos">
+            <div class="video-container">
+                <div class="content-box">But what is a neural network?</div>
+                <iframe src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Gradient descent, how neural networks learn</div>
+                <iframe src="https://www.youtube.com/embed/IHZwWFHWa-w" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">What is backpropagation really doing?</div>
+                <iframe src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Backpropagation calculus</div>
+                <iframe src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
+            </div>
+     	    
+	    <div class="video-container">
+                <div class="content-box">But what is a neural network?</div>
+                <iframe src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Gradient descent, how neural networks learn</div>
+                <iframe src="https://www.youtube.com/embed/IHZwWFHWa-w" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">What is backpropagation really doing?</div>
+                <iframe src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Backpropagation calculus</div>
+                <iframe src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="page2" class="tabcontent">
+        <h1>Welcome to Deep Learning</h1>
+
+        <div class="videos">
+            <div class="video-container">
+                <div class="content-box">But what is a neural network?</div>
+                <iframe src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Gradient descent, how neural networks learn</div>
+                <iframe src="https://www.youtube.com/embed/IHZwWFHWa-w" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">What is backpropagation really doing?</div>
+                <iframe src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Backpropagation calculus</div>
+                <iframe src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
+            </div>
+     	    
+	    <div class="video-container">
+                <div class="content-box">But what is a neural network?</div>
+                <iframe src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Gradient descent, how neural networks learn</div>
+                <iframe src="https://www.youtube.com/embed/IHZwWFHWa-w" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">What is backpropagation really doing?</div>
+                <iframe src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Backpropagation calculus</div>
+                <iframe src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="page3" class="tabcontent">
+        <h1>Welcome to Data Science</h1>
+	
+	<div class="videos">
+            <div class="video-container">
+                <div class="content-box">But what is a neural network?</div>
+                <iframe src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Gradient descent, how neural networks learn</div>
+                <iframe src="https://www.youtube.com/embed/IHZwWFHWa-w" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">What is backpropagation really doing?</div>
+                <iframe src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Backpropagation calculus</div>
+                <iframe src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
+            </div>
+     	    
+	    <div class="video-container">
+                <div class="content-box">But what is a neural network?</div>
+                <iframe src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Gradient descent, how neural networks learn</div>
+                <iframe src="https://www.youtube.com/embed/IHZwWFHWa-w" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">What is backpropagation really doing?</div>
+                <iframe src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Backpropagation calculus</div>
+                <iframe src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <div id="page4" class="tabcontent">
+        <h1>Welcome to Python </h1>
+    	
+	<div class="videos">
+            <div class="video-container">
+                <div class="content-box">But what is a neural network?</div>
+                <iframe src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Gradient descent, how neural networks learn</div>
+                <iframe src="https://www.youtube.com/embed/IHZwWFHWa-w" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">What is backpropagation really doing?</div>
+                <iframe src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Backpropagation calculus</div>
+                <iframe src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
+            </div>
+     	    
+	    <div class="video-container">
+                <div class="content-box">But what is a neural network?</div>
+                <iframe src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Gradient descent, how neural networks learn</div>
+                <iframe src="https://www.youtube.com/embed/IHZwWFHWa-w" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">What is backpropagation really doing?</div>
+                <iframe src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <div class="content-box">Backpropagation calculus</div>
+                <iframe src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+           
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            var pages = document.querySelectorAll('.tabcontent');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].classList.remove('active');
+            }
+
+            var tabs = document.querySelectorAll('.tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+
+            document.getElementById(pageId).classList.add('active');
+            document.querySelector('[onclick="showPage(\'' + pageId + '\')"]').classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
